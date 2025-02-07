@@ -163,7 +163,9 @@ const CustonTable = ({
               <TableRow
                 key={item.id}
                 onClick={() => setCurrentUser(item)}
-                className="hover:bg-sky-100 hover:cursor-pointer"
+                className={`${
+                  darkTheme ? "hover:bg-[#717171]!" : "hover:bg-blue-100!"
+                } hover:cursor-pointer`}
                 sx={{
                   "&:last-child td, &:last-child th": { border: 0 },
                   bgcolor: darkTheme ? "#191919" : "#fff",
